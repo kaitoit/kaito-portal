@@ -20,12 +20,9 @@
     "build": "next build",
     "start": "next start"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+"eslintConfig": {
+  "extends": "next/core-web-vitals"
+},
   "browserslist": {
     "production": [
       ">0.2%",
