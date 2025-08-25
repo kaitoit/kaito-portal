@@ -1,0 +1,15 @@
+/* Import the core building blocks of Tailwind CSS. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* We can define any global base styles here.
+  For a professional site, we'll set a clean, highly-readable font
+  and ensure a smooth, antialiased look.
+*/
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333; /* A softer black for better readability */
+}
