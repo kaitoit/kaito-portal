@@ -1,3 +1,6 @@
+import React from 'react';
+import Link from 'next/link';
+
 function Footer() {
   return (
     <footer className="bg-gray-800 text-gray-300 py-10">

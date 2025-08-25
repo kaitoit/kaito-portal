@@ -20,7 +20,7 @@ const ComplianceServices = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold text-gray-700 mb-2">ASD Essential 8 Implementation</h3>
             <p className="text-gray-500 text-sm">
-              Protecting against cyber threats with the Australian Cyber Security Centre's recommended mitigation strategies.
+              Protecting against cyber threats with the Australian Cyber Security Centre&apos;s recommended mitigation strategies.
             </p>
           </div>
           {/* Service 3: ISO 27001 Certification */}
