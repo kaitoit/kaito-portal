@@ -15,7 +15,7 @@ function HomePage() {
         <title>Kaito IT | Compliance & Cybersecurity for Professional Firms</title>
         <meta 
           name="description" 
-          content="Specialising in NIST 800-171, ASD Essential 8, and ISO 27001 compliance for legal, accounting, and medical firms." 
+          content="Specialisingz in NIST 800-171, ASD Essential 8, and ISO 27001 compliance for legal, accounting, and medical firms." 
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
