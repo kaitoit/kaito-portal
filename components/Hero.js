@@ -1,11 +1,17 @@
-"use client";
+const Hero = () => (
+  <section className="text-center py-24 md:py-40">
+    <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[var(--color-text-primary)] mb-6">
+      Sovereign Digital Fortification
+    </h1>
+    <p className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto mb-12">
+      We are the architects of digital security, engineering cryptographic solutions that protect the world&apos;s most critical assets.
+    </p>
+    <div>
+      <a href="/contact" className="btn btn--primary pulse-border-animation">
+        Secure a Consultation
+      </a>
+    </div>
+  </section>
+);
 
-export default function Hero() {
-  return (
-    <section className="text-center py-16 px-4 bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 text-white rounded-xl shadow-lg">
-      <h1 className="text-4xl font-bold mb-4">Your IT Compliance Partner</h1>
-      <p className="text-lg mb-6">Secure. Compliant. Hassle-Free Managed IT Solutions for Businesses.</p>
-      <a href="#contact" className="primary">Request a Consultation</a>
-    </section>
-  );
-}
+export default Hero;

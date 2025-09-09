@@ -1,18 +1,27 @@
-export default function Services() {
-  const services = [
-    { title: "Managed IT Services", desc: "24/7 monitoring, patching, and device management." },
-    { title: "Compliance Audits", desc: "Ensure alignment with Essential 8, ISO 27001, and NIST." },
-    { title: "Cybersecurity", desc: "Advanced threat protection and endpoint security." },
-  ];
+const serviceData = [
+  {
+    title: "Threat Intelligence",
+    description: "Proactive identification and analysis of emerging cyber threats to prevent attacks before they materialize."
+  },
+  {
+    title: "Compliance & Audit",
+    description: "Navigating complex international regulations with precision to ensure your organization meets all compliance standards."
+  },
+  {
+    title: "Incident Response",
+    description: "Rapid deployment of elite teams to contain, eradicate, and recover from security breaches with minimal disruption."
+  }
+];
 
+export default function Services() {
   return (
-    <section className="py-12">
-      <h2 className="text-3xl font-semibold text-center mb-10">Our Services</h2>
-      <div className="grid gap-6 md:grid-cols-3">
-        {services.map((service, idx) => (
-          <div key={idx} className="card text-center">
-            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-            <p>{service.desc}</p>
+    <section id="services">
+      <h2 className="text-3xl font-bold text-center mb-2 font-mono text-gray-400">Our Services</h2>
+      <div className="service-matrix">
+        {serviceData.map((service, index) => (
+          <div key={index} className="ui-panel service-card">
+            <h3 className="service-title">{service.title}</h3>
+            <p className="service-description">{service.description}</p>
           </div>
         ))}
       </div>
