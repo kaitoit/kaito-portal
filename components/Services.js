@@ -1,22 +1,20 @@
 export default function Services() {
+  const services = [
+    { title: "Managed IT Services", desc: "24/7 monitoring, patching, and device management." },
+    { title: "Compliance Audits", desc: "Ensure alignment with Essential 8, ISO 27001, and NIST." },
+    { title: "Cybersecurity", desc: "Advanced threat protection and endpoint security." },
+  ];
+
   return (
-    <section id="services" className="py-24 bg-gray-50">
-      <div className="container mx-auto px-6 max-w-5xl text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Core Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-            <h3 className="text-xl font-semibold text-gray-900">NIST SP 800-171</h3>
-            <p className="mt-2 text-gray-600">Protect Controlled Unclassified Information (CUI) and meet DoD requirements.</p>
+    <section className="py-12">
+      <h2 className="text-3xl font-semibold text-center mb-10">Our Services</h2>
+      <div className="grid gap-6 md:grid-cols-3">
+        {services.map((service, idx) => (
+          <div key={idx} className="card text-center">
+            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+            <p>{service.desc}</p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-            <h3 className="text-xl font-semibold text-gray-900">ASD Essential 8</h3>
-            <p className="mt-2 text-gray-600">Implement the highest maturity level for proactive defence against advanced threats.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-            <h3 className="text-xl font-semibold text-gray-900">ISO 27001</h3>
-            <p className="mt-2 text-gray-600">Build ultimate client trust with a globally recognised ISMS.</p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
